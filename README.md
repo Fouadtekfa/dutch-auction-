@@ -20,7 +20,7 @@ L'enchère est clôturée lorsque la soumission d'offres pour tous les articles 
 
 [^1] : IBM. Enchère ascendante Hollandaise. [en ligne] Disponible sur *https://www.ibm.com/docs/fr/emptoris-sourcing/10.1.0?topic=rt-dutch-forward-auction* (Consulté le 12/2023).
 
-## Réstitution
+## Restitution
 
 Un rapport concernant l'installation des outils de développement Ethereum doit être rédigé avant la fin du premier TP.
 
