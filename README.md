@@ -10,7 +10,7 @@ Le TP est à réaliser individuellement.
 
 Le projet consiste à créer un Smart Contract (SC) permettant de réaliser une enchère ascendante Hollandaise.
 
-Une enchère ascendante hollandaise est un type de RFx qui contient une liste d'articles que des acheteurs veulent vendre. Lors de cette enchère, le prix des articles diminue après des intervalles fixés jusqu'à ce que le prix réservé soit atteint. Avant que le prix réservé soit atteint, si le fournisseur fait une offre pour l'article, celui-ci est attribué à ce fournisseur et l'enchère est clôturée pour l'article.
+Une enchère ascendante hollandaise est un type de RFx (`Qu'est-ce que c'est ?`) qui contient une liste d'articles que des acheteurs veulent vendre. Lors de cette enchère, le prix des articles diminue après des intervalles fixés jusqu'à ce que le prix réservé soit atteint. Avant que le prix réservé soit atteint, si le fournisseur fait une offre pour l'article, celui-ci est attribué à ce fournisseur et l'enchère est clôturée pour l'article.
 
 Dans cette enchère, l'acheteur indique un prix de départ, une valeur de modification de prix, un intervalle de temps entre les modifications de prix et le prix réservé.
 
@@ -22,11 +22,11 @@ L'enchère est clôturée lorsque la soumission d'offres pour tous les articles 
 
 ## Restitution
 
-Un rapport concernant l'installation des outils de développement Ethereum doit être rédigé avant la fin du premier TP.
+**Un rapport concernant l'installation des outils de développement Ethereum doit être rédigé avant la fin du premier TP.**
 
 Le rendu du projet est prévu avant le début du second TP. Il est nécessaire de tester le SC, il est donc demandé de rédiger des tests unitaires ainsi que de la documentation à propos du SC.
 
 ## Installation
 
-Installez [NodeJS LTS](https://nodejs.org) (via `nvm` ou `asdf`), [Ganache](https://trufflesuite.com/docs/ganache/) et [Truffle](https://trufflesuite.com/docs/truffle/). N'oubliez pas de rédiger votre rapport en nmême temps.
+Installez [NodeJS LTS](https://nodejs.org) (via `nvm` ou `asdf`), [Ganache](https://trufflesuite.com/docs/ganache/) et [Truffle](https://trufflesuite.com/docs/truffle/). N'oubliez pas de rédiger votre rapport en même temps.
 
