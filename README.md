@@ -6,7 +6,7 @@
 
 Le TP est à réaliser individuellement.
 
-## Présentation [^1]
+## Présentation
 
 Le projet consiste à créer un Smart Contract (SC) permettant de réaliser une enchère ascendante Hollandaise.
 
