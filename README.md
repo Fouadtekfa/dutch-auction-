@@ -240,11 +240,10 @@ Ensuite, procédez aux commandes suivantes pour compiler vos contrats et les dé
 Ensuite, dans Ganache, ajoutez le chemin vers votre `truffle-config.js`. Sélectionnez 'Add Project' et redémarrez Ganache pour appliquer les modifications.
 
  ![Capture26 ](/Capture/capture26.png)
+
 **Confirmer la connexion avec Ganache** :
 
-1. **Ouvrez MetaMask** : Sélectionnez le réseau que vous avez configuré.
-
-2. **Vérifiez les contrats** : Dans l'onglet "Contrats" de MetaMask, recherchez le statut "deployed" pour confirmer le déploiement réussi.
+ Dans l'onglet "Contrats" de MetaMask, recherchez le statut "deployed" pour confirmer le déploiement réussi.
    ![Capture25](./Capture/Capture25.png)
 
 Le rendu du projet est prévu avant le début du second TP. Il est nécessaire de tester le SC, il est donc demandé de rédiger des tests unitaires ainsi que de la documentation à propos du SC.
