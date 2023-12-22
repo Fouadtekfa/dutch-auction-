@@ -2,7 +2,7 @@
 
 |   Nom   | Prénom |
 |---------|--------|
-|   Doe   |  Jane  |
+|   TEKFA   |  Fouad  |
 
 Le TP est à réaliser individuellement.
 
@@ -25,6 +25,62 @@ L'enchère est clôturée lorsque la soumission d'offres pour tous les articles 
 ## Restitution
 
 **Un rapport concernant l'installation des outils de développement Ethereum doit être rédigé avant la fin du premier TP.**
+
+### Installation des Outils de Développement : 
+#### 1- Installation NodeJS LTS :
+Si vous n'avez pas encore installé NodeJS, voici les commandes à suivre pour l'installer sur un système basé sur Debian ou Ubuntu :
+dans mon coter j'ai deja installer Node js 
+```shell
+sudo apt update
+sudo apt install nodejs npm
+```
+De mon côté, j'ai déjà installé NodeJS. Pour vérifier que NodeJS est correctement installé et connaître la version installée, vous pouvez exécuter la commande suivante dans votre terminal :
+
+  ```shell
+   node --version 
+   ```
+   ![Capture8](./Capture/Capture8.png)
+
+ Notez que l'utilisation de la commande sudo apt install installe la version de NodeJS disponible dans le dépôt de votre système, qui peut ne pas être la dernière version LTS. Pour des projets de développement Ethereum, il est souvent recommandé d'utiliser des outils de gestion de versions comme 'nvm' ou 'asdf' pour installer la version spécifique de NodeJS qui répond au mieux aux exigences de votre projet
+
+
+### 2- Installation de Ganache
+
+Ganache est une application de bureau qui simule une blockchain Ethereum personnelle pour le développement de Smart Contracts. Elle vous permet de déployer des contrats, de développer vos applications et d'exécuter des tests. Voici comment installer Ganache sur un système Ubuntu :
+
+1. **Téléchargez Ganache :**  
+   Rendez-vous sur le site officiel de Truffle Suite pour télécharger la dernière version de Ganache pour Linux : [Ganache](https://trufflesuite.com/ganache/).
+
+![Capture9](./Capture/Capture9.png)
+
+2. **Préparation du script d'installation :**  
+   - Une fois le téléchargement terminé, vous trouverez un fichier appelé `ganache-<version>-x86_64.AppImage` dans votre dossier de téléchargements.
+   - Ouvrez un terminal et naviguez vers le dossier où le fichier a été téléchargé.
+
+   - Rendez le fichier téléchargé exécutable afin de pouvoir lancer Ganache. Remplacez <version> par la version que vous avez téléchargée et exécutez la commande :
+   ```shell
+   chmod 777 ganache-2.7.1-linux-x86_64.AppImage
+   ```
+   
+3. **Lancement de Ganache :**  
+   Après avoir rendu le fichier exécutable, vous pouvez lancer Ganache en utilisant la commande :
+
+   ```shell
+   ./ganache-<version>-x86_64.AppImage
+   ```
+
+   Une fenêtre Ganache devrait s'ouvrir, indiquant que vous avez maintenant une blockchain Ethereum locale en cours d'exécution.
+
+   ![Capture1](./Capture/Capture1.png)
+   ![Capture3](./Capture/Capture3.png)
+
+    vous pouvez choisir de créer un nouvel espace de travail (new workspace) pour commencer à développer et tester vos Smart Contracts.
+    ![Capture4](./Capture/Capture4.png)
+
+
+####
+https://trufflesuite.com/docs/truffle/how-to/install/
+
 
 Le rendu du projet est prévu avant le début du second TP. Il est nécessaire de tester le SC, il est donc demandé de rédiger des tests unitaires ainsi que de la documentation à propos du SC.
 
