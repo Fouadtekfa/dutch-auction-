@@ -241,7 +241,7 @@ Ensuite, dans Ganache, ajoutez le chemin vers votre `truffle-config.js`. Sélect
 
  ![Capture26 ](/Capture/capture26.png)
 
-**Confirmer la connexion avec Ganache** :
+
 
  Dans l'onglet "Contrats" de Ganache, recherchez le statut "deployed" pour confirmer le déploiement réussi.
    ![Capture25](./Capture/Capture25.png)
