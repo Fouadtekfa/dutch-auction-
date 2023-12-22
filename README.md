@@ -30,5 +30,5 @@ Le rendu du projet est prévu avant le début du second TP. Il est nécessaire d
 
 ## Installation
 
-Installez [NodeJS LTS](https://nodejs.org) (via `nvm` ou `asdf`), [Ganache](https://trufflesuite.com/docs/ganache/) et [Truffle](https://trufflesuite.com/docs/truffle/). N'oubliez pas de rédiger votre rapport en même temps.
+Installez [NodeJS LTS](https://nodejs.org) (via `nvm` ou `asdf`), [Ganache](https://trufflesuite.com/docs/ganache/), [Truffle](https://trufflesuite.com/docs/truffle/) ainsi que MetaMask. N'oubliez pas de rédiger votre rapport en même temps.
 
