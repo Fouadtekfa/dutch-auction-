@@ -78,8 +78,42 @@ Ganache est une application de bureau qui simule une blockchain Ethereum personn
     ![Capture4](./Capture/Capture4.png)
 
 
-####
-https://trufflesuite.com/docs/truffle/how-to/install/
+
+4. **Lancement de Ganache avec start :**
+      ![Capture10](./Capture/Capture10.png)
+
+
+
+### Installation de Truffle
+
+Truffle est un environnement de développement, un framework de test et un pipeline d'actifs pour les blockchains utilisant l'Ethereum Virtual Machine (EVM). C'est un outil indispensable pour le développement de Smart Contracts. Voici comment l'installer :
+
+
+1. **Accédez à la documentation de Truffle :**  
+   Consultez la documentation officielle pour obtenir des informations à jour et des conseils supplémentaires : [Documentation Truffle](https://trufflesuite.com/docs/truffle/how-to/install/).
+
+
+2. **Installez Truffle :**  
+   Ouvrez un terminal et utilisez npm pour installer Truffle globalement sur votre système :
+
+   ```shell
+   npm install -g truffle
+   ```
+
+   Pendant l'installation, il est possible que vous receviez une liste d'avertissements. Ces avertissements sont généralement bénins et liés à des dépendances ou à des mises à jour.
+
+3. **Vérifiez l'installation :**  
+   Pour confirmer que Truffle a été correctement installé, exécutez la commande suivante :
+
+   ```shell
+   truffle version
+   ```
+   
+   Cette commande affiche la version de Truffle installée ainsi que les versions de dépendances associées comme Solidity, ce qui indique que Truffle est prêt à être utilisé.
+    
+    ![Capture10](./Capture/Capture7.png)
+
+
 
 
 Le rendu du projet est prévu avant le début du second TP. Il est nécessaire de tester le SC, il est donc demandé de rédiger des tests unitaires ainsi que de la documentation à propos du SC.
