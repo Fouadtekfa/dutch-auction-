@@ -237,8 +237,9 @@ Ensuite, procédez aux commandes suivantes pour compiler vos contrats et les dé
    truffle migrate
    ```
 
+Ensuite, dans Ganache, ajoutez le chemin vers votre `truffle-config.js`. Sélectionnez 'Add Project' et redémarrez Ganache pour appliquer les modifications.
 
-
+ ![Capture26 ](/Capture/capture26.png)
 **Confirmer la connexion avec Ganache** :
 
 1. **Ouvrez MetaMask** : Sélectionnez le réseau que vous avez configuré.
