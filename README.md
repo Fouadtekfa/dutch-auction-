@@ -154,8 +154,97 @@ Truffle est un environnement de développement, un framework de test et un pipel
    ![Capture14](./Capture/Capture14.png)
 
 
+Pour ajouter l'extension MetaMask à votre navigateur et créer un compte, suivez ces étapes :
 
 
+## Installation et Configuration de MetaMask
+
+vous installerez l'extension MetaMask sur votre navigateur. 
+
+### Création d'un compte MetaMask :
+
+1. **Ouvrez MetaMask :**
+   - Après l'installation, l'icône de MetaMask apparaîtra dans la barre d'outils de votre navigateur. Cliquez dessus pour l'ouvrir.
+
+![Capture15](./Capture/Capture15.png)
+
+
+2. **Configurez votre nouveau portefeuille :**
+   - Lors du premier lancement, MetaMask vous demandera si vous souhaitez créer un nouveau portefeuille ou importer un portefeuille existant. Sélectionnez "Créer un portefeuille".
+   - Acceptez les conditions d'utilisation après les avoir lues attentivement.
+
+3. **Créez un mot de passe fort :**
+   - Choisissez un mot de passe sécurisé. Ce mot de passe sera utilisé pour accéder à MetaMask sur votre navigateur. Il ne récupérera pas votre portefeuille si vous oubliez votre phrase secrète.
+
+4. **Sauvegardez votre phrase secrète :**
+   - MetaMask vous fournira une phrase secrète de 12 mots. C'est la clé de votre portefeuille et nécessaire pour récupérer votre compte si vous oubliez votre mot de passe ou changez d'appareil. Écrivez-la et gardez-la dans un endroit sûr et sécurisé.
+
+5. **Confirmez votre phrase secrète :**
+   - Pour vous assurer que vous avez bien sauvegardé votre phrase secrète, MetaMask vous demandera de la saisir à nouveau. Suivez les instructions pour terminer la configuration.
+
+6. **Votre portefeuille est prêt :**
+   - Une fois que tout est configuré, vous accéderez à l'interface utilisateur de MetaMask, où vous pourrez gérer vos fonds, connecter votre portefeuille à des applications décentralisées, et bien plus encore.
+![Capture19](./Capture/Capture19.png)
+
+
+### Configuration du Réseau avec MetaMask
+
+Pour établir la connexion entre MetaMask et Ganache :
+
+1. **Ajouter un réseau** : Sélectionnez "Ajouter un réseau" puis choisissez "Ajouter un réseau manuellement".
+
+2. **Saisir les informations** :
+
+   ![Capture20](/Capture/Capture20.png)
+
+3. **Confirmation de l'ajout** : Après avoir cliqué sur "Enregistrer", une fenêtre confirmera que le réseau a été ajouté avec succès.
+ 
+ ![Capture21](/Capture/Capture21.png)
+
+
+## Importation d'un Compte
+
+1. **Choisir l'importation** : Dans MetaMask, sélectionnez "Importer un compte".
+
+2. **Entrer la clé privée** : Utilisez celle d'une adresse Ganache.
+   ![Capture ](/Capture/Capture22.png)
+
+3. **Confirmer** : Vous devriez maintenant voir votre adresse et le solde correspondant dans MetaMask.
+   ![Capture ](/Capture/Capture23.png)
+
+
+## Vérification du Déploiement
+
+Avant de vérifier le déploiement, assurez-vous que la configuration de votre réseau local est correctement définie dans le fichier `truffle-config.js`. La section pertinente doit être décommentée comme suit :
+
+```shell
+development: {
+  host: "127.0.0.1",     // Localhost (par défaut : aucune)
+  port: 7545,            // Port Ethereum standard (par défaut : aucun)
+  network_id: "*",       // Tout réseau (par défaut : aucun)
+},
+```
+
+Ensuite, procédez aux commandes suivantes pour compiler vos contrats et les déployer sur le réseau spécifié :
+
+1. Compilez les contrats :
+   ```shell
+   truffle compile
+   ```
+
+2. Déployez les contrats sur le réseau :
+   ```shell
+   truffle migrate
+   ```
+
+
+
+**Confirmer la connexion avec Ganache** :
+
+1. **Ouvrez MetaMask** : Sélectionnez le réseau que vous avez configuré.
+
+2. **Vérifiez les contrats** : Dans l'onglet "Contrats" de MetaMask, recherchez le statut "deployed" pour confirmer le déploiement réussi.
+   ![Capture25](./Capture/Capture25.png)
 
 Le rendu du projet est prévu avant le début du second TP. Il est nécessaire de tester le SC, il est donc demandé de rédiger des tests unitaires ainsi que de la documentation à propos du SC.
 
