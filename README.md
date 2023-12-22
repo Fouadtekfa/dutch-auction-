@@ -115,6 +115,47 @@ Truffle est un environnement de développement, un framework de test et un pipel
 
 
 
+    Après avoir terminé les installations nécessaires, vous passerez à la création de votre projet Truffle avec MetaCoin,  Voici comment procéder, étape par étape :
+
+1. **Création du projet avec MetaCoin :**  
+   - Dans votre terminal, exécutez la commande suivante pour créer un nouveau projet Truffle utilisant le box MetaCoin :
+     ```shell
+     truffle unbox metacoin
+     ```
+   - Cette commande télécharge les fichiers nécessaires et prépare l'environnement de développement pour MetaCoin.
+  
+   ![Capture11](./Capture/Capture11.png)
+
+2. **Compilation du projet :**  
+   - Compilez les contrats intelligents de votre projet avec la commande :
+     ```shell
+     truffle compile
+     ```
+   ![Capture12](./Capture/Capture12.png)
+
+
+3. **Migration du contrat :**  
+   - Déployez les contrats sur la blockchain locale (Ganache, par exemple) en exécutant :
+     ```shell
+     truffle migrate
+     ```
+   - La migration s'occupe du déploiement des contrats sur votre réseau Ethereum spécifié dans le fichier de configuration Truffle.
+    
+    ![Capture13](./Capture/Capture13.png)
+
+
+4. **Test du contrat :**  
+   - Testez les contrats déployés avec la commande :
+     ```shell
+     truffle test
+     ```
+   - Truffle exécutera les scripts de test fournis dans le dossier 'test' de votre projet pour s'assurer que les contrats fonctionnent comme prévu.
+
+   ![Capture14](./Capture/Capture14.png)
+
+
+
+
 
 Le rendu du projet est prévu avant le début du second TP. Il est nécessaire de tester le SC, il est donc demandé de rédiger des tests unitaires ainsi que de la documentation à propos du SC.
 
