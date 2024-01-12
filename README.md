@@ -246,9 +246,31 @@ Ensuite, dans Ganache, ajoutez le chemin vers votre `truffle-config.js`. Sélect
  Dans l'onglet "Contrats" de Ganache, recherchez le statut "deployed" pour confirmer le déploiement réussi.
    ![Capture25](./Capture/Capture25.png)
 
-Le rendu du projet est prévu avant le début du second TP. Il est nécessaire de tester le SC, il est donc demandé de rédiger des tests unitaires ainsi que de la documentation à propos du SC.
 
-## Installation
+# Enchère Hollandaise
 
-Installez [NodeJS LTS](https://nodejs.org) (via `nvm` ou `asdf`), [Ganache](https://trufflesuite.com/docs/ganache/), [Truffle](https://trufflesuite.com/docs/truffle/) ainsi que MetaMask. N'oubliez pas de rédiger votre rapport en même temps.
+## Contrat DutchAuction
+
+L'enchère démarre avec une durée prédéfinie de 1 heure et deux articles, chacun ayant un prix initial de 1 ether. Le prix de chaque article diminue de 0.1 ether toutes les 60 secondes. L'enchère se ferme automatiquement si le prix de réserve de 0.2 ether est atteint. Les participants peuvent placer des enchères valides, marquant la fermeture de l'article.
+
+## Test DutchAuction
+Les tests comprennent la vérification de l'initialisation avec l'adresse correcte du commissaire-priseur et le prix de départ, la diminution correcte du prix au fil du temps, la fermeture réussie de l'enchère après une enchère valide, et la clôture automatique après la durée prédéfinie. Pour lancer les tests, suivez les étapes ci-dessous après avoir déployé le contrat :
+
+```shell
+truffle compile
+truffle migrate
+```
+
+
+![Capture25](./Capture/DutchAuction1.png)
+
+
+```shell
+truffle test
+```
+
+![Capture25](./Capture/dutchAuctionTest.png)
+
+
+
 
